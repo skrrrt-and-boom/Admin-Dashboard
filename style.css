@@ -5,6 +5,8 @@
   --background: #e2e8f0;
   --font: white;
   --detal: #fcd34d;
+  --light: #8E7070;
+  --dark: #740000;
 }
 
 body {
@@ -19,6 +21,57 @@ body {
   background-color: var(--dashboard);
   display: flex;
   flex-direction: column;
+}
+
+svg {
+  cursor: pointer;
+  align-self: center;
+}
+
+#dark {
+  fill: var(--dark);
+}
+
+#light {
+  fill: var(--light);
+}
+
+
+#dark2 {
+  animation: fadeInUp 2s infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+#light1 {
+  animation: ani2 2s infinite;
+}
+
+@keyframes ani2 {
+  from {
+
+  }
+  to {
+    transform: translateX(20%);
+  }
+}
+#dark1 {
+  animation: ani3 2s infinite;
+}
+@keyframes ani3 {
+  from {
+
+  }
+  to {
+    transform: translateX(40%);
+    opacity:0;
+  }
 }
 
 h2 {
